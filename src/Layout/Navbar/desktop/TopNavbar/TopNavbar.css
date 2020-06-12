@@ -1,0 +1,40 @@
+.navbar{
+    background-color: white;
+    padding: 5px 100px;
+    box-shadow: 0 0 5px rgba(0,0,0,.15);
+}
+
+.navbar .navbar-toggler{
+    border-color: transparent;
+}
+
+.nav-link {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #8f9398;
+}
+
+.nav-link.active:hover{
+    cursor: default;
+    color: #393e46;
+}
+
+.nav-link:hover:not(.active) {
+    color: #787c81;
+}
+
+
+/* Mobile */
+@media (max-width: 992px) 
+{
+    .navbar {
+        padding: 5px 20px;
+    }
+
+    .nav-link {
+        width: auto;
+        padding: 15px 0;
+    }
+
+    .navbar-brand { margin: auto; }
+}

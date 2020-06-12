@@ -1,0 +1,41 @@
+.navbar{
+    background-color: white;
+    padding-left: 50px;
+    box-shadow: 0 0 60px rgba(0,0,0,.3)
+}
+.navbar .navbar-toggler{
+    border-color: transparent;
+}
+/* Desktop */
+@media (min-width: 993px) 
+{  
+    .nav-button{   
+        border-radius: 40px;
+        margin-right: 10px;
+        min-width: 100px;
+        text-align: center;
+    }
+    .nav-button.yellow{
+        background-color: #f6891b;
+        color: #ffffff;
+    }
+    .nav-button.white{
+        background-color: #ffffff;
+        color: #f6891b;
+        border:2px solid #f6891b;
+        font-weight: 500;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 992px) 
+{
+    .navbar-collapse{
+        margin-left: -39px;
+    }
+    .nav-button{
+        border-bottom: 1px solid #efefef;
+        color: #4d4d4f;
+    }
+}

@@ -1,0 +1,25 @@
+
+.nav-m-button {
+    color: #8f9398;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+.nav-m-icon { 
+    width: 30px;
+    height: 30px;
+}
+.nav-m-button.disabled .nav-m-icon g,
+.nav-m-button.disabled .nav-m-icon path {
+ stroke: #8f9398;
+ stroke-width: 10px;
+ fill: #8f9398;
+
+}
+.nav-m-button.enabled .nav-m-icon g,
+.nav-m-button.enabled .nav-m-icon path {
+ stroke: #393e46;
+ stroke-width: 10px;
+ fill: #393e46;
+
+}
