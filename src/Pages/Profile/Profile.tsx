@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Col, Row, Carousel } from "react-bootstrap";
 
 import "./Profile.css";
-import HistoryCard from "./HistoryCard";
+import CardComponent from "../../common/CardComponent";
 import IProfile from "./IPorfile";
 import { ReactComponent as UserIcon } from "../../imgs/icon-user.svg";
 
@@ -33,16 +33,16 @@ const Profile = () => {
         <Col sm={12}>
           {profile?.transactions && (
             <Carousel interval={null}>
-              {profile?.transactions.map((transaction) => (
-                <Carousel.Item>
-                  <HistoryCard title="Meu card de testes">
+              {profile?.transactions.map((transaction, index) => (
+                <Carousel.Item key={index}>
+                  <CardComponent title="Meu card de testes">
                     Você realizou uma transação de
                     {transaction.from.currency}
                     {transaction.from.amount}
                     para
                     {transaction.to.currency}
                     {transaction.to.amount}
-                  </HistoryCard>
+                  </CardComponent>
                 </Carousel.Item>
               ))}
             </Carousel>

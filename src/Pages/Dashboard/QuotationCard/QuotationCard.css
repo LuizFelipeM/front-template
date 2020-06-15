@@ -1,0 +1,22 @@
+.simulation-result {
+    transition: all .5s;
+    text-align: right;
+    float: right;
+}
+
+.card p.hide {
+    visibility: visible;
+    opacity: 0;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: #ffffff!important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffffff!important;
+}
+
+::placeholder {
+    color: #ffffff!important;
+}
